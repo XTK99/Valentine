@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>💘 Valentine?</title>
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive;
+        background: pink;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+      }
+
+      button {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+        margin: 10px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+
+      .yes {
+        background: red;
+        color: white;
+      }
+
+      .no {
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Will you be my Valentine? 💕</h1>
+
+    <button class="yes" onclick="alert('YAY!!! 💖💖💖')">Yes 💘</button>
+
+    <button
+      class="no"
+      onmouseover="
+        this.style.position = 'absolute';
+        this.style.left = Math.random() * 80 + '%';
+        this.style.top = Math.random() * 80 + '%';
+      "
+    >
+      No 🙃
+    </button>
+  </body>
+</html>
